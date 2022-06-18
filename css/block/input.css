@@ -1,0 +1,85 @@
+@import url('root.css');
+
+.input {
+    width: 100%;
+    border: none;
+    background-color: var(--color-input);
+    border-radius: 14px;
+    padding: 15px 24px;
+    margin-bottom: 4px;
+    font-size: var(--font-big);
+}
+
+.input::placeholder {
+    font-family: var(--font-family-figure);
+    color: var(--color-white);
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: var(--font-big);
+    line-height: 24px;
+}
+
+.input[type="text"] {
+    font-family: var(--font-family-figure);
+    color: var(--color-white);
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: var(--font-big);
+    line-height: 24px;
+}
+
+.input[type="text"]:focus {
+    font-family: var(--font-family-figure);
+    color: var(--color-white);
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: var(--font-big);
+    line-height: 24px;
+}
+
+.input:hover {
+    background-color: var(--color-input-hover);
+}
+
+.input__top_name {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 15px;
+    right: 46px;
+}
+
+.input__text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--font-main);
+    line-height: 24px;
+    color: var(--color-white);
+    margin: 0;
+    padding-left: 8px;
+}
+
+.input__bottom_name {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 70px;
+    right: 27px;
+}
+
+.input__arrow {
+    position: absolute;
+    top: 40px;
+    left: 160px;
+    border: 3px solid var(--color-main-bg);
+    padding: 2px 4px;
+    background-color: var(--color-input);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input__arrow:hover {
+    background-color: var(--color-input-hover);
+}

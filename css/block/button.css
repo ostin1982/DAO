@@ -1,0 +1,106 @@
+@import url('root.css');
+
+.button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    background-color: inherit;
+    color: var(--color-main);
+    border: none;
+    font-size: var(--font-main);
+    margin-right: 10px;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+.button__account {
+    padding: 8px 16px;
+    background-color: var(--color-fourth-bg);
+    border-radius: 14px;
+    margin-right: 16px;
+}
+
+.button__account:last-child {
+    margin-right: 0;
+}
+
+.button__account_active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-fifth-bg);
+    padding: 6px 16px;;
+}
+
+.button__account_hover:hover {
+    background-color: var(--color-third-bg-hover);
+}
+
+.button__icon {
+    display: none;
+}
+
+.button__text {
+    margin: 0;
+    padding-left: 8px;
+}
+
+.button__workspace {
+    background-color: var(--color-button);
+    width: 100%;
+    padding: 16px 0;
+    font-size: 24px;
+    border-radius: 18px;
+    margin-top: 10px;
+}
+
+.button__workspace:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button__exchange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    width: 100%;
+    background-color: var(--color-fifth-bg);
+    font-weight: 500;
+    font-size: var(--font-main);
+    line-height: 24px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    padding: 16px 0;
+}
+
+.button__exchange:hover {
+    background-color: var(--color-fifth-bg-hover);
+}
+
+@media (max-width: 1040px) {
+    .button {
+        font-size: var(--font-little);
+    }
+
+    .button__account_hover {
+        display: none;
+    }
+
+    .button__account {
+        margin-right: 8px;
+    }
+
+    .button__icon {
+        display: flex;
+        background-color: var(--color-fourth-bg);
+        padding: 8px;
+        border-radius: 14px;
+        border: none;
+        margin-right: 8px;
+    }
+
+    .button__icon:last-child {
+        margin-right: 0;
+    }
+}

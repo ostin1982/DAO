@@ -1,0 +1,123 @@
+@import url('root.css');
+
+.workspace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workspace__statistics {
+    max-width: 963px;
+    width: 100%;
+    background-color: var(--color-fourth-bg);
+    border-radius: 40px;
+    padding: 35px 60px 60px 60px;
+}
+
+.workspace__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.workspace__info {
+    padding: 20px 30px;
+    border: 1px solid rgba(193, 229, 255, 0.2);
+    border-radius: 18px;
+}
+
+.workspace__top {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: start;
+    padding: 0 30px 11px 30px;
+}
+
+.workspace__subtitle {
+    font-family: var(--font-family);
+    color: var(--color-white);
+    opacity: 0.2;
+    font-size: var(--font-small);
+    font-weight: 500;
+    line-height: 14px;
+    margin: 0;
+}
+
+.workspace__bottom {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px 30px;
+    border: 1px solid rgba(193, 229, 255, 0.2);
+    border-radius: 18px;
+    justify-items: start;
+}
+
+.workspace__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workspace__img {
+    margin-right: 8px;
+}
+
+.workspace__img:last-child {
+    margin-right: 12px;
+}
+
+.workspace__title {
+    font-family: var(--font-family);
+    font-size: var(--font-big);
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.workspace__title_color {
+    color: var(--color-third);
+}
+
+@media (max-width: 1040px) {
+    .workspace {
+        padding: 17px 12px 0 12px;
+    }
+
+    .workspace__statistics {
+        padding: 15px;
+        border-radius: 18px;
+    }
+
+    .workspace__table {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .workspace__top {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    .workspace__subtitle {
+        font-size: var(--font-little);
+        margin: auto 0;
+    }
+
+    .workspace__bottom {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        border: none;
+        padding: 0;
+    }
+
+    .workspace__title {
+        font-size: var(--font-little);
+    }
+}

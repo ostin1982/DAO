@@ -1,0 +1,30 @@
+@import url('root.css');
+
+.exchange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.exchange__text {
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: var(--font-little);
+    line-height: 24px;
+    text-align: center;
+}
+
+.exchange__box {
+    position: relative;
+}
+
+@media (max-width: 1040px) {
+    .exchange {
+        display: none;
+    }
+}

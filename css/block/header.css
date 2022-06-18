@@ -1,0 +1,116 @@
+@import url('root.css');
+
+.header {
+    padding: 30px 30px 0 30px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__left {
+    padding: 4px;
+    background-color: var(--color-third-bg);
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link {
+    list-style-type: none;
+    padding: 8px 0;
+    margin-right: 10px;
+}
+
+.header__link:last-child {
+    margin-right: 0;
+}
+
+.header__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    background-color: inherit;
+    color: var(--color-main);
+    border: none;
+    font-size: var(--font-main);
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__text_active {
+    background-color: var(--color-second-bg);
+    border-radius: 12px;
+}
+
+.header__text_hover:hover {
+    background-color: var(--color-third-bg-hover);
+    border-radius: 12px;
+}
+
+.header__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__logo_small {
+    display: none;
+}
+
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-family: var(--font-family);
+    font-size: var(--font-small);
+    color: var(--color-second);
+    text-align: center;
+    margin: 0;
+    opacity: 0.5;
+    padding-top: 15px;
+}
+
+@media (max-width: 1040px) {
+    .header {
+        padding: 30px 30px 17px 30px;
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    .header__title {
+        display: none;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo_small {
+        display: block;
+    }
+}

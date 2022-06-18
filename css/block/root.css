@@ -1,0 +1,29 @@
+:root {
+    /* Color */
+    --color-main: #EDF5FB;
+    --color-second: #FCFDFF;
+    --color-third: #A873FF;
+    --color-white: #FFFFFF;
+    --color-main-bg: #1F1939;
+    --color-second-bg: #3F3669;
+    --color-third-bg: #191331;
+    --color-third-bg-hover: #241C42;
+    --color-fourth-bg: #2E2650;
+    --color-fifth-bg: #3B55AF;
+    --color-fifth-bg-hover: #324CA8;
+    --color-six-bg: #18142D;
+    --color-button: #334EFF;
+    --color-button-hover: #233DE3;
+    --color-input: #3F3669;
+    --color-input-hover: #594F8A;
+
+    /* Font */
+    --font-big: 20px;
+    --font-main: 16px;
+    --font-little: 14px;
+    --font-small: 12px;
+
+    /* Font-family */
+    --font-family: 'Montserrat', Arial, sans-serif;
+    --font-family-figure: 'Roboto Mono', Arial, sans-serif;
+}
